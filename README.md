@@ -9,7 +9,7 @@
  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝ ╚═════╝ ╚══════╝
 ```
 
-### **Cornelius Boateng** — *I love to build.*
+### * Building and Being Built*
 
 ---
 
