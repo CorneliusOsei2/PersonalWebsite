@@ -22,7 +22,7 @@ export default function Hero() {
           <h2 className="hero__role">{typed}<span className="hero__cursor">▌</span></h2>
           <p className="hero__bio">
             I build scalable systems, contribute to{' '}
-            <a href="https://documentdb.io" target="_blank" rel="noopener noreferrer">open-source databases</a>,
+            <a href="https://github.com/documentdb/documentdb" target="_blank" rel="noopener noreferrer">open-source databases</a>,
             and work to make tech accessible. Cornell CS <span className="hero__hl">'24</span>.
             From Ghana 🇬🇭 — running{' '}
             <a href="https://techelevate.org" target="_blank" rel="noopener noreferrer">TechElevate</a>.
