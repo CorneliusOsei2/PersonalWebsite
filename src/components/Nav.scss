@@ -1,25 +1,43 @@
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  padding: 16px 0; transition: all 0.3s;
-  &--scrolled { background: rgba(12,12,18,0.88); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 10px 0; }
+  padding: 18px 0; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  &--scrolled { background: rgba(10,11,16,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 12px 0; }
   &__inner { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; display: flex; align-items: center; justify-content: space-between; }
-  &__logo { font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--text); }
+  &__logo {
+    font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--text);
+    display: flex; align-items: center; gap: 8px;
+    transition: color 0.2s;
+    &:hover { color: var(--green); }
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green-glow);
+      animation: glow 3s ease-in-out infinite;
+    }
+  }
   &__br { color: var(--green); }
   &__links {
     display: flex; align-items: center; gap: 28px;
-    a { font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim); transition: color 0.2s; letter-spacing: 0.02em;
+    a { font-family: var(--mono); font-size: 0.7rem; color: var(--text-muted); transition: all 0.2s; letter-spacing: 0.02em; position: relative;
       &:hover { color: var(--green); }
+      &:hover::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 1px; background: var(--green); border-radius: 1px; }
     }
     @media (max-width: 700px) {
       display: none; position: fixed; inset: 0; background: var(--bg); flex-direction: column;
-      justify-content: center; gap: 32px;
+      justify-content: center; gap: 36px; text-align: center;
       &--open { display: flex; z-index: 200; }
-      a { font-size: 1.1rem; }
+      a { font-size: 1.2rem; color: var(--text-dim);
+        &:hover::after { display: none; }
+      }
     }
   }
   &__burger {
     display: none; background: none; border: none; cursor: pointer; padding: 4px;
-    span { display: block; width: 20px; height: 2px; background: var(--text-dim); margin: 4px 0; border-radius: 1px; }
+    span { display: block; width: 20px; height: 2px; background: var(--text-dim); margin: 4px 0; border-radius: 1px; transition: background 0.2s; }
+    &:hover span { background: var(--green); }
     @media (max-width: 700px) { display: block; z-index: 300; }
   }
 }

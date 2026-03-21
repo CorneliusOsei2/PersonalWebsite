@@ -53,7 +53,7 @@ export default function Hero() {
         </div>
         <pre className="hero__tc"><code><span className="c-m">$</span> cat cornelius.json
 <span className="c-br">{'{'}</span>
-  <span className="c-k">"name"</span>: <span className="c-s">"Cornelius Boateng"</span>,
+  <span className="c-k">"name"</span>: <span className="c-s">"Cornelius Osei Owusu Boateng"</span>,
   <span className="c-k">"role"</span>: <span className="c-s">"Software Engineer"</span>,
   <span className="c-k">"currently"</span>: <span className="c-s">"@ Microsoft"</span>,
   <span className="c-k">"school"</span>: <span className="c-s">"Cornell University '24"</span>,

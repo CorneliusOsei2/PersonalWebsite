@@ -5,9 +5,9 @@ const projects = [
   { name: 'DocumentDB', desc: 'MongoDB-compatible database engine for cloud-native and open-source workloads. Scalable query engine, wire-protocol compatibility, and production-grade performance.', tags: ['C','Databases','Open Source'], stars: '3.2k+', link: 'https://github.com/documentdb/documentdb', featured: true },
   { name: 'TechElevate', desc: 'Platform empowering the next generation of African tech talent — mentorship, workshops, and hands-on engineering programs.', tags: ['Next.js','TypeScript','Education','Full-Stack'], link: 'https://techelevate.org' },
   { name: 'Traduire', desc: 'Native iOS French utility app with translations, conjugation tables, vocabulary drills, and offline support.', tags: ['Swift','SwiftUI','iOS'], link: 'https://github.com/CorneliusOsei2/traduire' },
-  { name: 'StudyPot', desc: "Ghana's premier medical school peer-tutoring platform. Hosts organized learning materials across clinical sciences with video lectures and quizzes.", tags: ['Node.js','MongoDB','AWS S3','EJS'], link: 'https://www.studypot.org' },
+  { name: 'StudyPot', desc: "Ghana's premier medical school peer-tutoring platform. Hosts organized learning materials across clinical sciences with video lectures and quizzes.", tags: ['Node.js','MongoDB','AWS S3','EJS'], link: 'https://github.com/CorneliusOsei2' },
   { name: 'Dijkstra Visualizer', desc: "Interactive step-by-step visualization of Dijkstra's shortest path algorithm on weighted graphs.", tags: ['JavaScript','Algorithms','Canvas'], link: 'https://github.com/CorneliusOsei2/dijkstraVisualizer' },
-  { name: 'RISC-V Processor', desc: 'Pipelined RISC-V processor implementation covering fetch, decode, execute, memory, and writeback stages.', tags: ['OCaml','Computer Architecture','RISC-V'], link: 'https://github.com/CorneliusOsei2/rv-warmup' },
+  { name: 'RISC-V Processor', desc: 'Pipelined RISC-V processor implementation covering fetch, decode, execute, memory, and writeback stages.', tags: ['OCaml','Computer Architecture','RISC-V'], link: 'https://github.com/CorneliusOsei2/risc-v' },
 ];
 
 export default function Projects() {

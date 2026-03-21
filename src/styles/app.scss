@@ -2,15 +2,15 @@
 main { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
 
 .section {
-  padding: 96px 0;
+  padding: 100px 0;
   &__label {
     font-family: var(--mono);
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 500;
     color: var(--green);
-    letter-spacing: 0.15em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     &::before { content: '> '; color: var(--text-muted); }
   }
   &__heading {
@@ -18,7 +18,7 @@ main { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text);
-    margin-bottom: 40px;
+    margin-bottom: 44px;
     .hl { color: var(--green); }
     .br { color: var(--text-muted); }
   }
@@ -27,34 +27,49 @@ main { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 24px;
-  transition: all 0.25s ease;
-  &:hover { background: var(--bg-card-hover); border-color: var(--border-hover); transform: translateY(-2px); }
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px var(--border-hover);
+  }
 }
 
 .pill {
   display: inline-block;
   font-family: var(--mono);
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 500;
   color: var(--green);
   background: var(--green-dim);
-  padding: 3px 10px;
-  border-radius: 5px;
+  padding: 4px 11px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+  transition: all 0.2s;
 }
 
 .pill--purple { color: var(--purple); background: var(--purple-dim); }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
+  from { opacity: 0; transform: translateY(28px); }
   to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
 }
 @keyframes glow {
-  0%, 100% { box-shadow: 0 0 12px rgba(0,229,160,0.15); }
-  50% { box-shadow: 0 0 24px rgba(0,229,160,0.3); }
+  0%, 100% { box-shadow: 0 0 12px var(--green-glow); }
+  50% { box-shadow: 0 0 28px var(--green-glow), 0 0 60px rgba(0,229,160,0.05); }
+}
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
 }

@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg: #0c0c12;
-  --bg-alt: #12121a;
-  --bg-card: #161622;
-  --bg-card-hover: #1a1a2a;
-  --border: #232336;
-  --border-hover: #2e2e48;
-  --text: #e4e4ef;
-  --text-dim: #9090aa;
-  --text-muted: #505068;
+  --bg: #0a0b10;
+  --bg-alt: #10111a;
+  --bg-card: #141520;
+  --bg-card-hover: #1a1b2a;
+  --border: #1e2035;
+  --border-hover: #2a2d48;
+  --text: #e8e8f0;
+  --text-dim: #8e90a8;
+  --text-muted: #484a62;
   --green: #00e5a0;
-  --green-dim: rgba(0, 229, 160, 0.08);
+  --green-dim: rgba(0, 229, 160, 0.07);
+  --green-glow: rgba(0, 229, 160, 0.15);
   --purple: #8b6cef;
-  --purple-dim: rgba(139, 108, 239, 0.08);
+  --purple-dim: rgba(139, 108, 239, 0.07);
   --blue: #5eaeff;
   --yellow: #ffc857;
   --red: #ff6b6b;
@@ -30,7 +31,34 @@ body {
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+// Ambient background glow
+body::before {
+  content: '';
+  position: fixed;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--green-glow) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -300px;
+  left: -200px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139,108,239,0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 ::selection { background: var(--green); color: var(--bg); }
@@ -38,3 +66,4 @@ a { color: inherit; text-decoration: none; }
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }

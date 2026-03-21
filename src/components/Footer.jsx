@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer__inner">
         <p className="footer__credit">
           <span className="footer__comment">{'// '}</span>
-          designed & built by <strong>Cornelius Boateng</strong>
+          designed & built by <strong>Cornelius Osei Owusu Boateng</strong>
         </p>
         <p className="footer__copy">
           <span className="footer__mono">{'{'}</span> {new Date().getFullYear()} <span className="footer__mono">{'}'}</span>

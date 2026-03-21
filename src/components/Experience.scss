@@ -1,17 +1,20 @@
 .exp {
-  &__list { display: flex; flex-direction: column; gap: 14px; }
-  &__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 10px;
+  &__list { display: flex; flex-direction: column; gap: 16px; }
+  &__item { position: relative; border-left: 2px solid var(--border); transition: border-color 0.3s;
+    &:hover { border-left-color: var(--green); }
+  }
+  &__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 12px;
     @media (max-width: 600px) { flex-direction: column; gap: 4px; }
   }
   &__role { font-family: var(--mono); font-size: 0.85rem; font-weight: 600; color: var(--text); }
-  &__co { font-size: 0.78rem; color: var(--green); margin-top: 2px; }
+  &__co { font-size: 0.78rem; color: var(--green); margin-top: 3px; }
   &__loc { color: var(--text-muted); font-weight: 400; }
-  &__when { font-family: var(--mono); font-size: 0.65rem; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; }
+  &__when { font-family: var(--mono); font-size: 0.65rem; color: var(--text-muted); white-space: nowrap; flex-shrink: 0; background: var(--bg-alt); padding: 3px 10px; border-radius: 5px; }
   &__bullets {
     list-style: none; margin: 0 0 14px; padding: 0;
-    li { position: relative; padding-left: 18px; font-size: 0.82rem; color: var(--text-dim); line-height: 1.7; margin-bottom: 4px;
-      &::before { content: '▹'; position: absolute; left: 0; color: var(--green); font-size: 0.7rem; top: 3px; }
+    li { position: relative; padding-left: 18px; font-size: 0.82rem; color: var(--text-dim); line-height: 1.75; margin-bottom: 5px;
+      &::before { content: '▹'; position: absolute; left: 0; color: var(--green); font-size: 0.7rem; top: 4px; }
     }
   }
-  &__tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  &__tags { display: flex; flex-wrap: wrap; gap: 6px; }
 }

@@ -1,15 +1,17 @@
 .about {
-  &__grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px;
-    @media (max-width: 768px) { grid-template-columns: 1fr; }
+  &__grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 52px;
+    @media (max-width: 768px) { grid-template-columns: 1fr; gap: 36px; }
   }
-  &__prose p { color: var(--text-dim); font-size: 0.88rem; line-height: 1.8; margin-bottom: 14px;
+  &__prose p { color: var(--text-dim); font-size: 0.88rem; line-height: 1.85; margin-bottom: 16px;
     strong { color: var(--text); font-weight: 600; }
-    a { color: var(--green); border-bottom: 1px dotted var(--green); &:hover { border-style: solid; } }
+    a { color: var(--green); border-bottom: 1px dotted var(--green); transition: all 0.2s; &:hover { border-style: solid; } }
   }
-  &__skills { display: flex; flex-direction: column; gap: 16px; }
-  &__group { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px;
-    h4 { font-family: var(--mono); font-size: 0.72rem; font-weight: 600; color: var(--text); margin-bottom: 10px; }
+  &__skills { display: flex; flex-direction: column; gap: 14px; }
+  &__group { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 18px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover { border-color: var(--border-hover); background: var(--bg-card-hover); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,0.2); }
+    h4 { font-family: var(--mono); font-size: 0.7rem; font-weight: 600; color: var(--text); margin-bottom: 10px; }
   }
   &__arrow { color: var(--green); margin-right: 6px; }
-  &__tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  &__tags { display: flex; flex-wrap: wrap; gap: 6px; }
 }
