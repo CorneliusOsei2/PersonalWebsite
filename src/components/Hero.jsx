@@ -3,7 +3,7 @@ import './Hero.scss';
 
 export default function Hero() {
   const [typed, setTyped] = useState('');
-  const full = 'Software Engineer @ Microsoft';
+  const full = 'Software Engineer';
   useEffect(() => {
     let i = 0;
     const iv = setInterval(() => { if (i <= full.length) { setTyped(full.slice(0, i)); i++; } else clearInterval(iv); }, 50);
@@ -55,7 +55,7 @@ export default function Hero() {
 <span className="c-br">{'{'}</span>
   <span className="c-k">"name"</span>: <span className="c-s">"Cornelius Boateng"</span>,
   <span className="c-k">"role"</span>: <span className="c-s">"Software Engineer"</span>,
-  <span className="c-k">"company"</span>: <span className="c-s">"Microsoft"</span>,
+  <span className="c-k">"currently"</span>: <span className="c-s">"@ Microsoft"</span>,
   <span className="c-k">"school"</span>: <span className="c-s">"Cornell University '24"</span>,
   <span className="c-k">"from"</span>: <span className="c-s">"Kumasi, Ghana 🇬🇭"</span>,
   <span className="c-k">"focus"</span>: [
