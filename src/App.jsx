@@ -1,27 +1,18 @@
 import React from 'react';
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import OpenSource from './components/OpenSource';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import DevPage from './pages/dev/DevPage';
+import AgriPage from './pages/agri/AgriPage';
+import HomePage from './pages/home/HomePage';
 import './styles/app.scss';
 
 export default function App() {
   return (
-    <div className="app">
-      <Nav />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <OpenSource />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dev" element={<DevPage />} />
+        <Route path="/agri" element={<AgriPage />} />
+      </Routes>
+    </Router>
   );
 }
