@@ -18,7 +18,7 @@ const jobs = [
     ], tags: ['Python','Infrastructure','Full-Stack'] },
   { role: 'Teaching Assistant', co: 'Cornell University', when: '2021 — 2024', loc: 'Ithaca, NY',
     bullets: [
-      'TA for CS 4410 (Operating Systems), CS 1110 (Intro to Computing), and multiple other CS courses',
+      'TA for CS 4410 (Operating Systems), CS 4320 (Database Systems), CS 3410 (Computer System Organization), and CS 1110 (Intro to Computing)',
       'Led discussion sections, designed exam problems, and mentored hundreds of students',
       'Received the CIS Teaching Award (2022) for outstanding instruction and student impact',
     ], tags: ['Operating Systems','Python','Teaching','Mentoring'] },

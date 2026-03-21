@@ -23,7 +23,7 @@ export default function Hero() {
           <p className="hero__bio">
             I build scalable systems, contribute to{' '}
             <a href="https://github.com/documentdb/documentdb" target="_blank" rel="noopener noreferrer">open-source databases</a>,
-            and work to make tech accessible. Cornell CS <span className="hero__hl">'24</span>.
+            and work to make tech accessible.
             From Ghana 🇬🇭 — running{' '}
             <a href="https://techelevate.org" target="_blank" rel="noopener noreferrer">TechElevate</a>.
           </p>
@@ -64,7 +64,13 @@ export default function Hero() {
     <span className="c-s">"open_source"</span>,
     <span className="c-s">"ios_development"</span>
   ],
-  <span className="c-k">"motto"</span>: <span className="c-s">"I love to build."</span>
+  <span className="c-k">"also"</span>: [
+    <span className="c-s">"the_bible ✝️"</span>,
+    <span className="c-s">"bass_guitar 🎸"</span>,
+    <span className="c-s">"learning_french 🇫🇷"</span>,
+    <span className="c-s">"languages"</span>
+  ],
+  <span className="c-k">"motto"</span>: <span className="c-s">"Building and being built."</span>
 <span className="c-br">{'}'}</span></code></pre>
       </div>
     </section>
