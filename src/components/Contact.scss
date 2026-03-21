@@ -1,0 +1,16 @@
+.contact {
+  text-align: center;
+  &__body { max-width: 520px; margin: 0 auto; }
+  &__text { font-size: 0.88rem; color: var(--text-dim); line-height: 1.8; margin-bottom: 28px; }
+  &__links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  &__btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--mono); font-size: 0.72rem; font-weight: 500;
+    color: var(--text-dim); background: var(--bg-card); border: 1px solid var(--border);
+    padding: 10px 20px; border-radius: 8px; transition: all 0.2s;
+    &:hover { color: var(--green); border-color: var(--green); background: var(--green-dim); }
+    &--primary { color: var(--bg); background: var(--green); border-color: var(--green); font-weight: 600;
+      &:hover { background: #00f5b0; color: var(--bg); }
+    }
+  }
+}

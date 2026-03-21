@@ -1,0 +1,60 @@
+.app { max-width: 100%; overflow-x: hidden; }
+main { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
+
+.section {
+  padding: 96px 0;
+  &__label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--green);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    &::before { content: '> '; color: var(--text-muted); }
+  }
+  &__heading {
+    font-family: var(--mono);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 40px;
+    .hl { color: var(--green); }
+    .br { color: var(--text-muted); }
+  }
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  transition: all 0.25s ease;
+  &:hover { background: var(--bg-card-hover); border-color: var(--border-hover); transform: translateY(-2px); }
+}
+
+.pill {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--green);
+  background: var(--green-dim);
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.pill--purple { color: var(--purple); background: var(--purple-dim); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 12px rgba(0,229,160,0.15); }
+  50% { box-shadow: 0 0 24px rgba(0,229,160,0.3); }
+}

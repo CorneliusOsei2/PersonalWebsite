@@ -1,0 +1,51 @@
+.hero {
+  min-height: 100vh; display: flex; align-items: center; gap: 48px;
+  max-width: var(--max-w); margin: 0 auto; padding: 80px 28px 40px;
+  @media (max-width: 768px) { flex-direction: column; padding-top: 100px; gap: 32px; }
+
+  &__left { flex: 1; display: flex; gap: 16px; animation: fadeUp 0.7s ease both; }
+  &__line-numbers {
+    display: flex; flex-direction: column; gap: 0;
+    span { font-family: var(--mono); font-size: 0.7rem; color: var(--text-muted); line-height: 2.1; text-align: right; min-width: 16px; user-select: none; }
+    @media (max-width: 500px) { display: none; }
+  }
+  &__code { flex: 1; }
+  &__comment { font-family: var(--mono); font-size: 0.8rem; color: var(--text-muted); font-style: italic; line-height: 2.1; }
+  &__name {
+    font-family: var(--mono); font-size: 3.2rem; font-weight: 800; color: var(--text); line-height: 2.1;
+    @media (max-width: 500px) { font-size: 2.2rem; }
+  }
+  &__punct { color: var(--green); }
+  &__role { font-family: var(--mono); font-size: 0.95rem; font-weight: 400; color: var(--green); line-height: 2.1; }
+  &__cursor { animation: blink 0.9s step-end infinite; color: var(--green); font-weight: 300; }
+  &__bio { font-size: 0.88rem; color: var(--text-dim); line-height: 1.75; margin: 16px 0 24px; max-width: 460px;
+    a { color: var(--green); border-bottom: 1px dotted var(--green); &:hover { border-style: solid; } }
+  }
+  &__hl { color: var(--green); font-weight: 600; }
+  &__actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  &__btn {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-family: var(--mono); font-size: 0.7rem; font-weight: 500;
+    color: var(--text-dim); background: var(--bg-card); border: 1px solid var(--border);
+    padding: 9px 18px; border-radius: 8px; transition: all 0.2s;
+    &:hover { color: var(--green); border-color: var(--green); background: var(--green-dim); }
+    &--accent { color: var(--bg); background: var(--green); border-color: var(--green); font-weight: 600;
+      &:hover { background: #00f5b0; color: var(--bg); border-color: #00f5b0; }
+    }
+  }
+
+  &__terminal {
+    flex: 0 0 340px; border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border); background: var(--bg-card);
+    animation: fadeUp 0.7s 0.25s ease both;
+    @media (max-width: 768px) { flex: none; width: 100%; }
+  }
+  &__tb { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: var(--bg-alt); border-bottom: 1px solid var(--border); }
+  &__td { width: 10px; height: 10px; border-radius: 50%;
+    &--r { background: #ff5f57; } &--y { background: #ffbd2e; } &--g { background: #28c840; }
+  }
+  &__tt { font-family: var(--mono); font-size: 0.6rem; color: var(--text-muted); margin-left: 8px; }
+  &__tc { padding: 16px; font-family: var(--mono); font-size: 0.68rem; line-height: 1.85; color: var(--text-dim); overflow-x: auto; white-space: pre; }
+}
+.c-m { color: var(--text-muted); } .c-br { color: var(--text); }
+.c-k { color: var(--purple); } .c-s { color: var(--green); }

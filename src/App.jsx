@@ -1,24 +1,27 @@
-import Intro from './Components/intro/Intro'
-import Project from './Components/project/Project'
-import Menu from './Components/menu/Menu'
+import React from 'react';
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import OpenSource from './components/OpenSource';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './styles/app.scss';
 
-import {useState} from 'react'
-
-import './app.scss'
-const App = () => {
-
-  const [menuOpen, setMenuOpen] = useState(false)
-
+export default function App() {
   return (
     <div className="app">
-      
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <div className="sections">
-        <Intro menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-        <Project />
-      </div>
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <OpenSource />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
-
-export default App;

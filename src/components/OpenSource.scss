@@ -1,0 +1,24 @@
+.oss {
+  &__awards { display: flex; flex-direction: column; gap: 12px; }
+  &__award {
+    display: flex; align-items: center; gap: 16px;
+    &-icon { flex-shrink: 0; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+      background: rgba(255,200,87,0.08); border-radius: 8px;
+    }
+    &-title { font-family: var(--mono); font-size: 0.82rem; font-weight: 600; color: var(--text); }
+    &-org { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+  }
+  &__cta {
+    display: flex; align-items: center; justify-content: space-between; gap: 24px; border-left: 3px solid var(--purple);
+    @media (max-width: 600px) { flex-direction: column; align-items: flex-start; }
+    &-left {
+      h3 { font-family: var(--mono); font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+      p { font-size: 0.8rem; color: var(--text-dim); max-width: 420px; }
+    }
+    &-btn {
+      display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 0.72rem; font-weight: 600;
+      color: var(--bg); background: var(--green); padding: 10px 20px; border-radius: 8px; white-space: nowrap;
+      transition: all 0.2s; &:hover { background: #00f5b0; }
+    }
+  }
+}
