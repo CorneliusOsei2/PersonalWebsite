@@ -2,10 +2,10 @@ import React from 'react';
 import './About.scss';
 
 const skills = [
-  { cat: 'Languages', items: ['C', 'C++', 'Python', 'JavaScript', 'TypeScript', 'Swift', 'OCaml', 'SQL'] },
-  { cat: 'Systems & Infra', items: ['Distributed Systems', 'Database Engines', 'Operating Systems', 'Cloud (Azure)'] },
-  { cat: 'Frameworks', items: ['React', 'Node.js', 'Django', 'Flask', 'FastAPI', 'SwiftUI', 'Express'] },
-  { cat: 'Tools', items: ['Git', 'Docker', 'PostgreSQL', 'MongoDB', 'DocumentDB', 'Firebase', 'AWS S3'] },
+  { cat: 'Languages', items: ['C', 'C++', 'Python', 'Java', 'JavaScript', 'TypeScript', 'Swift', 'OCaml', 'Hack/PHP', 'SQL'] },
+  { cat: 'Systems & Infra', items: ['Distributed Systems', 'Database Engines', 'Operating Systems', 'Cloud (Azure)', 'Data Engineering'] },
+  { cat: 'Frameworks', items: ['React', 'Node.js', 'Django', 'Flask', 'FastAPI', 'SwiftUI', 'GraphQL'] },
+  { cat: 'Tools', items: ['Git', 'Docker', 'PostgreSQL', 'MongoDB', 'DocumentDB', 'Firebase', 'AWS', 'Figma'] },
 ];
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
       <div className="about__grid">
         <div className="about__prose">
           <p>I'm currently a software engineer at <strong>Microsoft</strong>, where I work on cloud-native database infrastructure and open-source tooling. I graduated from <strong>Cornell University</strong> in 2024 with a degree in Computer Science.</p>
-          <p>At Cornell, I was a TA for <strong>CS 4410</strong> (Operating Systems), <strong>CS 4320</strong> (Database Systems), <strong>CS 3410</strong> (Computer System Organization), and <strong>CS 1110</strong> (Intro to Computing). I was recognized with the <strong>Teaching Award</strong> from CIS, the <strong>Jonathan Marx Memorial Senior Prize</strong>, and the <strong>Leadership in Service Award</strong> from the Office of DEIB.</p>
+          <p>At Cornell, I was a Teaching Assistant for <strong>CS 4410</strong> (Operating Systems), <strong>CS 4320</strong> (Database Systems), <strong>CS 3410</strong> (Computer System Organization), and <strong>CS 1110</strong> (Intro to Computing). I was recognized with the <strong>Teaching Award</strong> from CIS, the <strong>Jonathan Marx Memorial Senior Prize</strong>, the <strong>Leadership in Service Award</strong> from the Office of DEIB, and made the <strong>Dean's List</strong>.</p>
           <p>Outside of work, I run <a href="https://techelevate.org" target="_blank" rel="noopener noreferrer">TechElevate</a> — an initiative empowering the next generation of African tech talent through mentorship, workshops, and hands-on engineering programs.</p>
           <p>When I'm not writing code, I'm reading the Bible (my favorite book of all time ✝️), learning French 🇫🇷, exploring new languages (human and programming), or playing bass guitar 🎸. I believe the best engineers are curious about more than just engineering.</p>
         </div>

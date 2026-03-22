@@ -1,12 +1,12 @@
 import React from 'react';
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import OpenSource from './components/OpenSource';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Nav from './components/Nav/Nav';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Experience from './components/Experience/Experience';
+import Projects from './components/Projects/Projects';
+import OpenSource from './components/OpenSource/OpenSource';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import './styles/app.scss';
 
 export default function App() {
