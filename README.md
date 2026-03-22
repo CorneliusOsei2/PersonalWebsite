@@ -9,7 +9,7 @@
  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝ ╚═════╝ ╚══════╝
 ```
 
-### * Building and Being Built*
+### Building and Being Built
 
 ---
 
