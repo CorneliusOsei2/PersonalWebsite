@@ -10,7 +10,7 @@
     padding: 12px 22px; border-radius: 10px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     &:hover { color: var(--green); border-color: var(--green); background: var(--green-dim); transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,229,160,0.1); }
     &--primary { color: var(--bg); background: var(--green); border-color: var(--green); font-weight: 600;
-      &:hover { background: #00f5b0; color: var(--bg); box-shadow: 0 4px 24px var(--green-glow); }
+      &:hover { background: var(--green-hover); color: var(--bg); box-shadow: 0 4px 24px var(--green-glow); }
     }
   }
 }

@@ -30,7 +30,7 @@
     padding: 9px 18px; border-radius: 8px; transition: all 0.2s;
     &:hover { color: var(--green); border-color: var(--green); background: var(--green-dim); }
     &--accent { color: var(--bg); background: var(--green); border-color: var(--green); font-weight: 600;
-      &:hover { background: #00f5b0; color: var(--bg); border-color: #00f5b0; }
+      &:hover { background: var(--green-hover); color: var(--bg); border-color: var(--green-hover); }
     }
   }
 

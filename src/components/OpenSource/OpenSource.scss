@@ -18,7 +18,7 @@
     &-btn {
       display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 0.72rem; font-weight: 600;
       color: var(--bg); background: var(--green); padding: 10px 20px; border-radius: 8px; white-space: nowrap;
-      transition: all 0.2s; &:hover { background: #00f5b0; }
+      transition: all 0.2s; &:hover { background: var(--green-hover); }
     }
   }
 }
